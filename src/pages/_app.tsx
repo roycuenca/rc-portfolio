@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google';
 
 import '../styles/globals.css';
 import NavBar from '../components/Navbar/NavBar';
+import Footer from '../components/Footer/Footer';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -26,6 +27,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       >
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
       </main>
     </>
   );

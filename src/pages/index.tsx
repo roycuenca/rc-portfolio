@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import ProfilePic from '../../public/images/profile/developer-pic-1.png';
+import { LinkArrow } from '../components/Icons/LinkArrowIcon';
+import AnimatedText from '../components/AnimatedText/AnimatedText';
+import ProfilePic from '../../public/images/profile/profile-pic.png';
+import ButtonText from '../components/ButtonText/ButtonText';
 import Layout from '../components/Layout/Layout';
+import Button from '../components/Button/Button';
 
 const Home: React.FC = () => {
   return (
@@ -18,18 +22,32 @@ const Home: React.FC = () => {
               <Image
                 src={ProfilePic}
                 alt="Portfolio"
-                className="w-full h-auto"
+                className="w-full h-auto max-w-xl"
               />
             </div>
-            <div className="w-1/2">
-              {/* TODO: Animated Text Here */}
-              <h1>Turning Vision Into Reality With Code And Design. </h1>
-              <p>
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+            <div className="w-1/2 flex flex-col items-center self-center">
+              <AnimatedText
+                text="Mobile & Frontend Developer"
+                customTextStyles="!text-left"
+              />
+              <p className="my-4 text-base font-medium">
+                Hi, I'm Roy, an experienced developer specializing in React
+                Native, React, and Node. With 6+ years of expertise, I've
+                excelled in mobile app development (React Native) and built
+                robust web solutions (React and Node). I'm passionate about
+                creating captivating user interfaces and scalable solutions.
+                Excited to share my expertise at this event!
               </p>
+              <div className="flex items-center self-start mt-2">
+                <Button action="/cv-roycuenca.pdf" download>
+                  Resume <LinkArrow className="w-6 ml-1" />
+                </Button>
+
+                <ButtonText
+                  text="Contact me"
+                  onPressAction="mailto:roycuencadev@gmail.com"
+                />
+              </div>
             </div>
           </div>
         </Layout>

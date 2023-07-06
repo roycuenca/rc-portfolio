@@ -14,7 +14,7 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   { icon: 'https://www.linkedin.com/in/roycuenca/', url: <LinkedInIcon /> },
-  { icon: 'https://gist.github.com/roycuenca', url: <GithubIcon /> },
+  { icon: 'https://github.com/roycuenca', url: <GithubIcon /> },
   { icon: 'https://twitter.com/Roycuenca', url: <TwitterIcon /> },
   { icon: '', url: <MoonIcon /> },
 ];

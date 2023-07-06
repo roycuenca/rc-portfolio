@@ -8,13 +8,13 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, customContainerStyles }) => (
   <div
     className={`
-	w-full
-	h-full
-	inline-block
-	z-0
-	bg-light
-	p-32
-	${customContainerStyles}`}
+        w-full
+        h-full
+        inline-block
+        z-0
+        bg-light
+        p-32
+	      ${customContainerStyles}`}
   >
     {children}
   </div>
