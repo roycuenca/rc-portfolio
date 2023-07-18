@@ -1,0 +1,18 @@
+export const skillsPosition = [
+  { name: 'Web', xCoord: 0, yCoord: 0 },
+  { name: 'CSS', xCoord: -20, yCoord: 2 },
+  { name: 'Javascript', xCoord: 20, yCoord: 6 },
+  { name: 'Reactjs', xCoord: 0, yCoord: 12 },
+  { name: 'Nextjs', xCoord: -20, yCoord: -15 },
+  { name: 'Git', xCoord: 32, yCoord: -5 },
+  { name: 'Web Design', xCoord: -15, yCoord: 20 },
+  { name: 'Nodejs', xCoord: 10, yCoord: -13 },
+  { name: 'Firebase', xCoord: -10, yCoord: -25 },
+  { name: 'Tailwind CSS', xCoord: 20, yCoord: -20 },
+  { name: 'Redux', xCoord: -30, yCoord: -5 },
+  { name: 'Context API', xCoord: 30, yCoord: 15 },
+  { name: 'React Native', xCoord: -10, yCoord: -8 },
+  { name: 'Express', xCoord: 16, yCoord: 20 },
+  { name: 'Nestjs', xCoord: -26, yCoord: 12 },
+  { name: 'Hooks', xCoord: 20, yCoord: -5 },
+];
